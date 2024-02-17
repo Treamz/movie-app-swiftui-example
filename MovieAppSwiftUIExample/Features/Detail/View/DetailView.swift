@@ -56,6 +56,21 @@ struct DetailView: View {
                             }
                     }
                 }
+                
+                switch vm.selectedSection {
+                case .about:
+                    Text(vm.movie.overview)
+                case .review:
+                
+                    ScrollView {
+                        VStack {
+                            ForEach(vm.reviews) { review in
+                                ReviewCard(review: review)
+                                
+                            }
+                        }
+                    }
+                }
                 Spacer()
             }
             .padding()
@@ -63,6 +78,9 @@ struct DetailView: View {
         }
         .preferredColorScheme(.dark)
         .background(Color.appBackground)
+        .task {
+            await vm.fetchReviews()
+        }
     }
     
     var posterImageHeight: CGFloat {

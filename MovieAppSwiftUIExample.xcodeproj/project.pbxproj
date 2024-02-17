@@ -12,6 +12,8 @@
 		22A1C29B2B8127C800606358 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C29A2B8127C800606358 /* DetailView.swift */; };
 		22A1C29E2B8127EA00606358 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C29D2B8127EA00606358 /* DetailViewModel.swift */; };
 		22A1C2A02B81348900606358 /* DetailSectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C29F2B81348900606358 /* DetailSectionCard.swift */; };
+		22A1C2A32B815A8700606358 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2A22B815A8700606358 /* Review.swift */; };
+		22A1C2A52B815C9200606358 /* ReviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2A42B815C9200606358 /* ReviewCard.swift */; };
 		22D4F16E2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F16D2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift */; };
 		22D4F1702B615D05009B322E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F16F2B615D05009B322E /* ContentView.swift */; };
 		22D4F1722B615D08009B322E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D4F1712B615D08009B322E /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		22A1C29A2B8127C800606358 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		22A1C29D2B8127EA00606358 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		22A1C29F2B81348900606358 /* DetailSectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSectionCard.swift; sourceTree = "<group>"; };
+		22A1C2A22B815A8700606358 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		22A1C2A42B815C9200606358 /* ReviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCard.swift; sourceTree = "<group>"; };
 		22D4F16A2B615D05009B322E /* MovieAppSwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAppSwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D4F16D2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppSwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		22D4F16F2B615D05009B322E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		22A1C2982B8127BC00606358 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				22A1C2A12B815A8000606358 /* Model */,
 				22A1C29C2B8127DF00606358 /* ViewModel */,
 				22A1C2992B8127C200606358 /* View */,
 			);
@@ -149,6 +154,14 @@
 				22A1C29D2B8127EA00606358 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22A1C2A12B815A8000606358 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22A1C2A22B815A8700606358 /* Review.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		22D4F1612B615D05009B322E = {
@@ -281,6 +294,7 @@
 				22D4F1CA2B755AD5009B322E /* CustomImageView.swift */,
 				22A1C2962B811FD500606358 /* GenreCard.swift */,
 				22A1C29F2B81348900606358 /* DetailSectionCard.swift */,
+				22A1C2A42B815C9200606358 /* ReviewCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -434,9 +448,11 @@
 				22D4F16E2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift in Sources */,
 				22D4F1C72B7558B0009B322E /* MovieCard.swift in Sources */,
 				22D4F1D22B769250009B322E /* ApiConstructor.swift in Sources */,
+				22A1C2A32B815A8700606358 /* Review.swift in Sources */,
 				22D4F1BE2B616240009B322E /* SearchBar.swift in Sources */,
 				22D4F1B62B6160C0009B322E /* Optional.swift in Sources */,
 				22D4F1D02B769122009B322E /* Endpoints.swift in Sources */,
+				22A1C2A52B815C9200606358 /* ReviewCard.swift in Sources */,
 				22D4F1C02B6167DF009B322E /* Constants.swift in Sources */,
 				22D4F2242B7B8B63009B322E /* AppDelegate.swift in Sources */,
 			);

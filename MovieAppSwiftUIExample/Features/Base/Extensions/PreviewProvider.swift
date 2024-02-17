@@ -36,4 +36,6 @@ class DeveloperPreview {
                              voteCount: 25502)
     
     let genre = Genre(id: 28, name: "Action")
+    
+    let review = Review(author: "CinemaSerf", authorDetails: nil, content: "Test content", createdAt: "2023", id: "634492", updatedAt: "Test", url: "Test")
 }
