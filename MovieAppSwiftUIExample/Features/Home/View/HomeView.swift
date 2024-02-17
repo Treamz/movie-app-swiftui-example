@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     @State private var searchText = ""
     
+    @Namespace var  namespace
+    
     @StateObject private var vm = HomeViewModel()
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -27,11 +29,29 @@ struct HomeView: View {
                     }
                 }
                 
+                ScrollView(.horizontal,showsIndicators: false) {
+                    HStack {
+                        ForEach(vm.genre) {genre in
+                            GenreCard(genre: genre, namespace: namespace, selectedGenre: $vm.selectedGenre)
+                                .onTapGesture {
+                                    withAnimation(.easeInOut) {
+                                        vm.selectedGenre = genre
+                                        Task {
+                                            await vm.fetchMoviesForSelectedGenre()
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+                Text(vm.errorMsg)
+                
                 LazyVGrid(
                     columns : [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),],spacing: 20) {
                     
-                        ForEach(vm.topRatedMovies) {movie in
+                        ForEach(vm.moviesForSelectedGenre) {movie in
                             MovieCard(movie: movie,type: .grid)
+                                
                         }
                 }
             }
@@ -42,6 +62,8 @@ struct HomeView: View {
         .task {
             await vm.fetchTrendingMovies()
             await vm.fetchTopRatedMovies()
+            await vm.fetchGenre()
+            await vm.fetchMoviesForSelectedGenre()
         }
     }
 }

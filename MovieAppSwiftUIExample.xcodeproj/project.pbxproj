@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A1C2952B7FDE2700606358 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2942B7FDE2700606358 /* Genre.swift */; };
+		22A1C2972B811FD600606358 /* GenreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2962B811FD500606358 /* GenreCard.swift */; };
 		22D4F16E2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F16D2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift */; };
 		22D4F1702B615D05009B322E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F16F2B615D05009B322E /* ContentView.swift */; };
 		22D4F1722B615D08009B322E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D4F1712B615D08009B322E /* Assets.xcassets */; };
@@ -51,9 +53,12 @@
 		22D4F1D42B7692B4009B322E /* DefaultUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F1D32B7692B3009B322E /* DefaultUrlBuilder.swift */; };
 		22D4F1D62B769491009B322E /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F1D52B769491009B322E /* MovieService.swift */; };
 		22D4F1D82B769608009B322E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F1D72B769608009B322E /* HomeViewModel.swift */; };
+		22D4F2242B7B8B63009B322E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4F2232B7B8B63009B322E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22A1C2942B7FDE2700606358 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		22A1C2962B811FD500606358 /* GenreCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCard.swift; sourceTree = "<group>"; };
 		22D4F16A2B615D05009B322E /* MovieAppSwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAppSwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D4F16D2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppSwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		22D4F16F2B615D05009B322E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 		22D4F1D32B7692B3009B322E /* DefaultUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUrlBuilder.swift; sourceTree = "<group>"; };
 		22D4F1D52B769491009B322E /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		22D4F1D72B769608009B322E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		22D4F2232B7B8B63009B322E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 				22D4F1862B615E25009B322E /* Colors.xcassets */,
 				22D4F1732B615D08009B322E /* MovieAppSwiftUIExample.entitlements */,
 				22D4F1742B615D08009B322E /* Preview Content */,
+				22D4F2232B7B8B63009B322E /* AppDelegate.swift */,
 			);
 			path = MovieAppSwiftUIExample;
 			sourceTree = "<group>";
@@ -240,6 +247,7 @@
 				22D4F1BD2B616240009B322E /* SearchBar.swift */,
 				22D4F1C62B7558B0009B322E /* MovieCard.swift */,
 				22D4F1CA2B755AD5009B322E /* CustomImageView.swift */,
+				22A1C2962B811FD500606358 /* GenreCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				22D4F1C32B755802009B322E /* Movie.swift */,
+				22A1C2942B7FDE2700606358 /* Genre.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,7 +392,9 @@
 				22D4F1B22B615F81009B322E /* Poppins.swift in Sources */,
 				22D4F1832B615DCE009B322E /* Image.swift in Sources */,
 				22D4F1CB2B755AD5009B322E /* CustomImageView.swift in Sources */,
+				22A1C2972B811FD600606358 /* GenreCard.swift in Sources */,
 				22D4F1C42B755802009B322E /* Movie.swift in Sources */,
+				22A1C2952B7FDE2700606358 /* Genre.swift in Sources */,
 				22D4F16E2B615D05009B322E /* MovieAppSwiftUIExampleApp.swift in Sources */,
 				22D4F1C72B7558B0009B322E /* MovieCard.swift in Sources */,
 				22D4F1D22B769250009B322E /* ApiConstructor.swift in Sources */,
@@ -391,6 +402,7 @@
 				22D4F1B62B6160C0009B322E /* Optional.swift in Sources */,
 				22D4F1D02B769122009B322E /* Endpoints.swift in Sources */,
 				22D4F1C02B6167DF009B322E /* Constants.swift in Sources */,
+				22D4F2242B7B8B63009B322E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
